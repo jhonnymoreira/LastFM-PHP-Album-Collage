@@ -49,9 +49,9 @@ use Aws\Sns\SnsClient;
 use Doctrine\Common\Cache\FilesystemCache;
 use Guzzle\Cache\DoctrineCacheAdapter;
 
-DB::$user = $SERVER['DB_USER'];
-DB::$password = $SERVER['PASSWORD'];
-DB::$dbName = $SERVER['DB_NAME'];
+DB::$user = $_SERVER['DB_USER'];
+DB::$password = $_SERVER['PASSWORD'];
+DB::$dbName = $_SERVER['DB_NAME'];
 
 function getJson($url)
 {
