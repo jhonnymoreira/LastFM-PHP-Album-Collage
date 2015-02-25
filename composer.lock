@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7a3c54c9e1e42d7e9fcd371ba540189f",
+    "hash": "c35c93ec831909e0fba90f3a38e6ddd6",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "2.7.17",
+            "version": "2.7.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "eddf89846ed0f15e8e2b8cbe6d08125eaa20ad80"
+                "reference": "2c9d93fbe680f64a84f5877209904f414d5cf92f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eddf89846ed0f15e8e2b8cbe6d08125eaa20ad80",
-                "reference": "eddf89846ed0f15e8e2b8cbe6d08125eaa20ad80",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2c9d93fbe680f64a84f5877209904f414d5cf92f",
+                "reference": "2c9d93fbe680f64a84f5877209904f414d5cf92f",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-01-27 20:14:01"
+            "time": "2015-02-24 00:04:06"
         },
         {
             "name": "doctrine/annotations",
@@ -825,18 +825,61 @@
             "time": "2012-12-21 11:40:51"
         },
         {
+            "name": "sergeytsalkov/meekrodb",
+            "version": "v2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SergeyTsalkov/meekrodb.git",
+                "reference": "eb36858f1aff94ae1665900e681a1cfb78563ee1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SergeyTsalkov/meekrodb/zipball/eb36858f1aff94ae1665900e681a1cfb78563ee1",
+                "reference": "eb36858f1aff94ae1665900e681a1cfb78563ee1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "db.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Tsalkov",
+                    "email": "stsalkov@gmail.com"
+                }
+            ],
+            "description": "The Simple PHP/MySQL Library",
+            "homepage": "http://www.meekro.com",
+            "keywords": [
+                "database",
+                "mysql",
+                "mysqli",
+                "pdo"
+            ],
+            "time": "2014-06-16 22:40:22"
+        },
+        {
             "name": "symfony/console",
-            "version": "v2.6.3",
+            "version": "v2.6.4",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "6ac6491ff60c0e5a941db3ccdc75a07adbb61476"
+                "reference": "e44154bfe3e41e8267d7a3794cd9da9a51cfac34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/6ac6491ff60c0e5a941db3ccdc75a07adbb61476",
-                "reference": "6ac6491ff60c0e5a941db3ccdc75a07adbb61476",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/e44154bfe3e41e8267d7a3794cd9da9a51cfac34",
+                "reference": "e44154bfe3e41e8267d7a3794cd9da9a51cfac34",
                 "shasum": ""
             },
             "require": {
@@ -879,21 +922,21 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-06 17:50:02"
+            "time": "2015-01-25 04:39:26"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.6.3",
+            "version": "v2.6.4",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "40ff70cadea3785d83cac1c8309514b36113064e"
+                "reference": "f75989f3ab2743a82fe0b03ded2598a2b1546813"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/40ff70cadea3785d83cac1c8309514b36113064e",
-                "reference": "40ff70cadea3785d83cac1c8309514b36113064e",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/f75989f3ab2743a82fe0b03ded2598a2b1546813",
+                "reference": "f75989f3ab2743a82fe0b03ded2598a2b1546813",
                 "shasum": ""
             },
             "require": {
@@ -937,22 +980,22 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-05 14:28:40"
+            "time": "2015-02-01 16:10:57"
         }
     ],
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v58",
+            "version": "v64",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "ec35e338207a33b72a62ceac35cfd652774a915e"
+                "reference": "aea81319f561cf2eb581736b9b30e7a81c48363b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/ec35e338207a33b72a62ceac35cfd652774a915e",
-                "reference": "ec35e338207a33b72a62ceac35cfd652774a915e",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/aea81319f561cf2eb581736b9b30e7a81c48363b",
+                "reference": "aea81319f561cf2eb581736b9b30e7a81c48363b",
                 "shasum": ""
             },
             "bin": [
@@ -983,13 +1026,14 @@
                 "nginx",
                 "php"
             ],
-            "time": "2015-01-27 01:46:03"
+            "time": "2015-02-19 09:59:04"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "ext-gd": "*"
     },
