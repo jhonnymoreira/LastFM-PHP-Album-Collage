@@ -198,10 +198,10 @@ function getArt($albums, $quality)
 		$artUrl[$i]['album'] = $album->{'name'};
 		$artUrl[$i]['url'] = $url;
 		DB::insert('albums', array(
-			'artist' => $artUrl[$i]['artist]'];
-			'album' => $artUrl[$i]['album'];
-			'appears' => 'true';
-			'count' => 1;
+			'artist' => $artUrl[$i]['artist]'],
+			'album' => $artUrl[$i]['album'],
+			'appears' => 'true',
+			'count' => 1,
 		));
 		$i++;
 	}
