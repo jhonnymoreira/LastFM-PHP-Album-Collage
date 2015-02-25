@@ -53,7 +53,6 @@ DB::$user = $SERVER['DB_USER'];
 DB::$password = $SERVER['PASSWORD'];
 DB::$dbName = $SERVER['DB_NAME'];
 
-
 function getJson($url)
 {
 	$curl = curl_init($url);
@@ -198,6 +197,12 @@ function getArt($albums, $quality)
 		$artUrl[$i]['artist'] = $album->{'artist'}->{'name'};
 		$artUrl[$i]['album'] = $album->{'name'};
 		$artUrl[$i]['url'] = $url;
+		DB::insert('albums', array(
+			'artist' => $artUrl[$i]['artist]'];
+			'album' => $artUrl[$i]['album'];
+			'appears' => 'true';
+			'count' => 1;
+		));
 		$i++;
 	}
 
