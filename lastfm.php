@@ -54,7 +54,7 @@ DB::$password = $_SERVER['RDS_PASSWORD'];
 DB::$host = $_SERVER['RDS_HOSTNAME'];
 DB::$port = $_SERVER['RDS_PORT'];
 DB::$encoding = 'utf8';
-DB::$dbName = $_SERVER['DB_NAME'];
+DB::$dbName = $_SERVER['RDS_DB_NAME'];
 
 function getJson($url)
 {
@@ -201,7 +201,7 @@ function getArt($albums, $quality)
 		$artUrl[$i]['album'] = $album->{'name'};
 		$artUrl[$i]['url'] = $url;
 		DB::insert('albums', array(
-			'artist' => $artUrl[$i]['artist]'],
+			'artist' => $artUrl[$i]['artist'],
 			'album' => $artUrl[$i]['album'],
 			'appears' => 'true',
 			'count' => 1,
