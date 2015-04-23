@@ -49,13 +49,6 @@ use Aws\Sns\SnsClient;
 use Doctrine\Common\Cache\FilesystemCache;
 use Guzzle\Cache\DoctrineCacheAdapter;
 
-DB::$user = $_SERVER['RDS_USERNAME'];
-DB::$password = $_SERVER['RDS_PASSWORD'];
-DB::$host = $_SERVER['RDS_HOSTNAME'];
-DB::$port = $_SERVER['RDS_PORT'];
-DB::$encoding = 'utf8';
-DB::$dbName = $_SERVER['RDS_DB_NAME'];
-
 function getJson($url)
 {
 	$curl = curl_init($url);
@@ -200,12 +193,6 @@ function getArt($albums, $quality)
 		$artUrl[$i]['artist'] = $album->{'artist'}->{'name'};
 		$artUrl[$i]['album'] = $album->{'name'};
 		$artUrl[$i]['url'] = $url;
-		DB::insert('albums', array(
-			'artist' => $artUrl[$i]['artist'],
-			'album' => $artUrl[$i]['album'],
-			'appears' => 'true',
-			'count' => 1,
-		));
 		$i++;
 	}
 
@@ -269,8 +256,7 @@ if(empty($config['bucket']) && empty($config['api_key']))
 $key = 'images/'.$request['user'].'-'.$request['period'].'.jpg';
 
 $lastfmApi = "http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=".$request['user']."&period=".$request['period']."&api_key=".$config['api_key']."&limit=$limit&format=json";
-$validUser = "http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=".$request['user']."&api_key=990bffa4bfec47d7e826740f266d3e75&format=json";
-
+$validUser = "http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=".$request['user']."&api_key=".$config['api_key']."&format=json";
 
 $infoJson = json_decode(getJson($validUser));
 
