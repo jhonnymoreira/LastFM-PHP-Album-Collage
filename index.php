@@ -160,7 +160,9 @@ for($x=4; $x<=15; $x++){
 <h3>About</h3>
 </header>
 <p>Create an album collage from your Last.fm scrobbles</p>
-<p>If you run into any issues or have any suggestions for the LastFM tool- please drop me a mail at dave@paddez.com.</p></section>
+<p>If you run into any issues or have any suggestions for the LastFM tool- please drop me a mail at dave@paddez.com.
+	Hi /mu/ <3
+</p></section>
 </div>
 </footer>
 </body>
