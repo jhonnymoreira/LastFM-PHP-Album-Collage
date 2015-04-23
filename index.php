@@ -161,18 +161,6 @@ for($x=4; $x<=15; $x++){
 </header>
 <p>Create an album collage from your Last.fm scrobbles</p>
 <p>If you run into any issues or have any suggestions for the LastFM tool- please drop me a mail at dave@paddez.com.</p></section>
-<section id ="links">
-<header>
-<h3> Links </h3>
-</header>
-<ul>
-<li id="fast1"><a href="http://redbrick.dcu.ie/">Redbrick</a></li>
-<li id="fast1"><a href="http://games.dcu.ie/">DCU's Gaming Society</a></li>
-<li id="fast1"><a href="http://www.codekettl.com">CodeKettl</a></li>
-<li id="fast1"><a href="http://pastebin.com">Pastebin</a></li>
-<li id="fast1"><a href="http://www.dcu.ie"> My College!</a></li>
-
-</ul>
 </div>
 </footer>
 </body>
