@@ -13,7 +13,7 @@
    Version 1.0 = 26/10/2014
    Version 1.1 = 28/10/2014
    Version 1.2 = 10/02/2015
-
+   Version 1.3 = 24/04/2015
    0.5
    Minor Bugfixes
 
@@ -241,6 +241,7 @@ $request['user'] = $user;
 $request['period'] = $period;
 $request['cols'] = $cols;
 $request['rows'] = $rows;
+$request['scale'] = $scale * 0.1;
 $albumInfo = isset($info) && $info == 1;
 
 //Hack to prevent albums with no images

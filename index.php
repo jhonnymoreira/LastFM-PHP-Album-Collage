@@ -117,7 +117,6 @@ for($x=4; $x<=15; $x++){
 	echo "<option value=\"$x\">$x</option>\n";
 }
 ?>
-
 </select>
 </td>
 <tr>               
@@ -134,10 +133,17 @@ for($x=4; $x<=15; $x++){
 </td>
 </tr>
 <tr>
-<td class="label"> Album Captions: </td>
+<td class="label">Album Captions: </td>
 <td>
 <input type="checkbox" name="info" value="1">
 </td>
+</tr>
+<tr>
+<td class="label">Scale: </td>
+<td>
+<input type="range" name="scale" min="0" max="10">
+</td>
+</tr>
 </table>
 <br />
 <input type=submit value="Submit" name="submit" onClick="changeImage();">
